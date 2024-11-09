@@ -156,4 +156,4 @@ const deleteProfileController = async () => {
     }
 }
 
-export { getUserController, updateUserController, updatePasswordController, resetPasswordController };
+export { getUserController, updateUserController, updatePasswordController, resetPasswordController, deleteProfileController };
