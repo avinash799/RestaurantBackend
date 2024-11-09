@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import Food from "./food.schema";
 
 const restaurantSchema = new mongoose.Schema({
     title: {

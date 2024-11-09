@@ -19,9 +19,13 @@ app.use(express.json()); // to parse JSON requests
 import authRoutes from "./routes/authRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 import restaurantRoutes from "./routes/restaurantRoutes.js"
+import categoryRoutes from "./routes/categoryRoutes.js"
+import foodRoutes from "./routes/foodRoutes.js"
 api.use("/api/v1/auth", authRoutes);
 api.use("/api/v1/user", userRoutes);
 api.use("/api/v1/restaurant", restaurantRoutes)
+api.use('/api/v1/category', categoryRoutes)
+api.use('./api/v1/food', foodRoutes);
 // Basic route to check server status
 
 app.get('/', (req, res) => {
